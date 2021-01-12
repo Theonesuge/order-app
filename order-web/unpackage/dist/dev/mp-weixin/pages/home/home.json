@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "云餐厅自助点餐",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "swiper": "/components/swiper/swiper"
+  }
+}

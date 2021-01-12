@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FoodsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*
+ * php artisan make:controller FoodsController
+ * 创建食品路由
+ * name给路由器起名
+ */
+
+// 创建路由组
+Route::prefix('api')->group(function (){
+    Route::get('/foods',[FoodsController::class, 'index'])->name('foods.index');
+});
+

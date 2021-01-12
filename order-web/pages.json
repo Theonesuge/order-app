@@ -1,16 +1,68 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		//pages数组中第一项表示应用启动页
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "云餐厅自助点餐",
+				"enablePullDownRefresh": false
 			}
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "点餐",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tam/tam",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#d81e06",
 		"backgroundColor": "#F8F8F8"
-	}
+	},
+	 "tabBar": {
+	        "color": "#333333",
+	        "selectedColor": "#d81e06",
+	        "borderStyle": "black",
+	        "backgroundColor": "#ffffff",
+	        "list": [{
+	            "pagePath": "pages/home/home",
+	            "iconPath": "static/images/icon/home.png",
+	            "selectedIconPath": "static/images/icon/home_select.png",
+	            "text": "首页"
+	        }, {
+	            "pagePath": "pages/order/order",
+	            "iconPath": "static/images/icon/order.png",
+	            "selectedIconPath": "static/images/icon/order_select.png",
+	            "text": "点餐"
+	        },
+			{
+			    "pagePath": "pages/tam/tam",
+			    "iconPath": "static/images/icon/tamicon.png",
+			    "selectedIconPath": "static/images/icon/tamicon_select.png",
+			    "text": "订单"
+			},
+			{
+			    "pagePath": "pages/personal/personal",
+			    "iconPath": "static/images/icon/my.png",
+			    "selectedIconPath": "static/images/icon/my_select.png",
+			    "text": "我的"
+			}
+			]
+	    }
 }
