@@ -1,0 +1,177 @@
+{
+  "id": "2284356",
+  "name": "某餐厅点餐APP",
+  "font_family": "iconfont",
+  "css_prefix_text": "order-icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9712770",
+      "name": "更多",
+      "font_class": "gengduox",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "4142394",
+      "name": "钱包",
+      "font_class": "qianbao",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "1340410",
+      "name": "商城",
+      "font_class": "shangcheng1",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "14722981",
+      "name": "美食",
+      "font_class": "meishi",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "19745519",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "f1ce",
+      "unicode_decimal": 61902
+    },
+    {
+      "icon_id": "19745543",
+      "name": "订单",
+      "font_class": "dingdan2",
+      "unicode": "f1e5",
+      "unicode_decimal": 61925
+    },
+    {
+      "icon_id": "3885985",
+      "name": "外卖",
+      "font_class": "_waimai",
+      "unicode": "e82e",
+      "unicode_decimal": 59438
+    },
+    {
+      "icon_id": "17602813",
+      "name": "充值",
+      "font_class": "chongzhi",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "18402745",
+      "name": "咨询",
+      "font_class": "zixun",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "7741597",
+      "name": "食品_三明治",
+      "font_class": "shipin_sanmingzhi",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7741615",
+      "name": "食品_纸杯蛋糕",
+      "font_class": "shipin_zhibeidangao",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7741598",
+      "name": "食品_薯条",
+      "font_class": "shipin_shutiao",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7741602",
+      "name": "食品_鸡腿",
+      "font_class": "shipin_jitui",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "7741609",
+      "name": "食品_布丁",
+      "font_class": "shipin_buding",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7741610",
+      "name": "食品_汉堡",
+      "font_class": "shipin_hanbao",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "7741612",
+      "name": "食品_香肠",
+      "font_class": "shipin_xiangchang",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "7741614",
+      "name": "食品_牛奶",
+      "font_class": "shipin_niunai",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "16942326",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "11520147",
+      "name": "减少",
+      "font_class": "jianshao",
+      "unicode": "e753",
+      "unicode_decimal": 59219
+    },
+    {
+      "icon_id": "11542852",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "16394621",
+      "name": "购物车",
+      "font_class": "biaoqiankuozhan_gouwuche-244",
+      "unicode": "eb6e",
+      "unicode_decimal": 60270
+    },
+    {
+      "icon_id": "8783187",
+      "name": "箭头",
+      "font_class": "dibudaohanglan-",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "797218",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "5771110",
+      "name": "我的",
+      "font_class": "My",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

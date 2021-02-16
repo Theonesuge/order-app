@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/*引入uView的全局SCSS主题文件 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.settlement.data-v-00659ba6 {
+  background-color: #f8f8f8;
+}
+.settlement .settlement_box.data-v-00659ba6 {
+  background-color: #f8f8f8;
+}
+.settlement .restaurant.data-v-00659ba6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 28rpx;
+  background-color: #FFFFFF;
+  border-radius: 0 0 50rpx 50rpx;
+  box-shadow: 4rpx 6rpx 6rpx 0 rgba(0, 0, 0, 0.1);
+}
+.settlement .restaurant-two.data-v-00659ba6 {
+  margin-left: 28rpx;
+}
+.settlement .restaurant-two.data-v-00659ba6:last-child {
+  font-size: 0.75rem;
+}
+.settlement .restaurant-title.data-v-00659ba6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-bottom: 8rpx;
+}
+.settlement .restaurant-title view.data-v-00659ba6:first-child {
+  border: 1rpx #d81e06 solid;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  color: #d81e06;
+  margin-right: 10rpx;
+}
+.settlement .restaurant-title view.data-v-00659ba6:last-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.mode.data-v-00659ba6 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 26rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+}
+.mode > view.data-v-00659ba6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.mode > view.data-v-00659ba6:first-child {
+  border-bottom: 1rpx #ececec solid;
+  padding-bottom: 21rpx;
+  margin-bottom: 21rpx;
+}
+.pop-center.data-v-00659ba6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 120rpx;
+}
+.pop-center view.data-v-00659ba6 {
+  border: 1rpx #999999 solid;
+  color: #999999;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+  border-radius: 28rpx;
+  font-size: 0.75rem;
+  margin-left: 28rpx;
+}
+.pop-top.data-v-00659ba6 {
+  font-size: 0.875rem;
+  color: #333333;
+  font-weight: 600;
+  padding: 28rpx;
+}
+.pop-button.data-v-00659ba6 {
+  width: 92%;
+  margin: 0 auto;
+}
+.phone.data-v-00659ba6 {
+  padding: 28rpx;
+  margin-bottom: 18rpx;
+}
+.details-box.data-v-00659ba6 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 26rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+}
+.details.data-v-00659ba6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.total.data-v-00659ba6 {
+  text-align: right;
+  margin-top: 18rpx;
+}
+.total text.data-v-00659ba6:first-child {
+  font-size: 0.75rem;
+  color: #CCCCCC;
+  margin-right: 10rpx;
+}
+.total text.data-v-00659ba6:last-child {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.title.data-v-00659ba6 {
+  font-weight: 600;
+  margin-bottom: 18rpx;
+}
+.payment.data-v-00659ba6 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 26rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+}
+.payment view.data-v-00659ba6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.payment-top.data-v-00659ba6,
+.payment-center.data-v-00659ba6 {
+  margin-bottom: 50rpx;
+}
+.payment-top.data-v-00659ba6 {
+  border-bottom: 1rpx #ececec solid;
+  padding-bottom: 21rpx;
+}
+.payment-top view.data-v-00659ba6:last-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.payment-center view.data-v-00659ba6:first-child {
+  font-weight: 600;
+}
+.payment-center view.data-v-00659ba6:last-child {
+  color: #999999;
+}
+.payment-bottom view.data-v-00659ba6:first-child {
+  font-weight: 600;
+}
+.payment-bottom view.data-v-00659ba6:last-child {
+  color: #999999;
+}
+.pay.data-v-00659ba6 {
+  width: 100%;
+  padding: 18rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 10rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+.pay > view.data-v-00659ba6:first-child {
+  color: #d81e06;
+  font-size: 1.25rem;
+}
+.pay > view.data-v-00659ba6:last-child {
+  background-color: #d81e06;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  padding-left: 68rpx;
+  padding-right: 68rpx;
+  border-radius: 55rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+  text-align: center;
+}
+.remarks.data-v-00659ba6 {
+  font-size: 0.75;
+  font-weight: 600;
+  padding: 28rpx;
+}
+.select.data-v-00659ba6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 28rpx;
+  margin-bottom: 120rpx;
+}
+.select > view.data-v-00659ba6 {
+  border: 1rpx solid #999999;
+  color: #999999;
+  font-size: 0.75rem;
+  padding-left: 36rpx;
+  padding-right: 36rpx;
+  border-radius: 55rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  text-align: center;
+  margin-right: 28rpx;
+}
+button.data-v-00659ba6 {
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #d81e06;
+  border-radius: 10rem;
+  padding-top: 38rpx;
+  padding-bottom: 38rpx;
+  line-height: 0;
+}
+.gopay.data-v-00659ba6 {
+  width: 50%;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #d81e06;
+  border-radius: 10rem;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+  line-height: 0;
+  margin-top: 28rpx;
+}
+.active.data-v-00659ba6 {
+  background-color: #d81e06;
+  color: #FFFFFF !important;
+  border: 1rpx #d81e06 solid !important;
+}
+

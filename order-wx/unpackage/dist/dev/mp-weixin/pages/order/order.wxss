@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/*引入uView的全局SCSS主题文件 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 选中样式变色 */
+.active.data-v-127632e4 {
+  background-color: #ffffff;
+  color: #d81e06 !important;
+}
+.order-address.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 18rpx;
+  margin-bottom: 8rpx;
+  box-shadow: 3rpx 3rpx 3rpx 0 rgba(0, 0, 0, 0.1);
+}
+.address.data-v-127632e4 {
+  font-size: 0.75rem;
+}
+.address view.data-v-127632e4:first-child {
+  margin-left: 8rpx;
+  margin-bottom: 8rpx;
+}
+.address view.data-v-127632e4:last-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.address view:last-child text.data-v-127632e4:last-child {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.order-search.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.order-list .left.data-v-127632e4 {
+  width: 22%;
+  position: fixed;
+  background: #f7f7f7;
+}
+.order-list .oreder-title.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 25rpx;
+  color: #666666;
+  padding: 28rpx 0;
+}
+.order-list .oreder-title.data-v-127632e4:last-child {
+  padding-bottom: 200rpx;
+}
+.order-list .right.data-v-127632e4 {
+  width: 78%;
+  float: right;
+  position: fixed;
+  margin-left: 22%;
+}
+.order-list .right-list.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 28rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 16rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+.order-list .right-list > view.data-v-127632e4:first-child {
+  padding: 18rpx 28rpx 18rpx 18rpx;
+}
+.order-list .right-list.data-v-127632e4:last-child {
+  margin-bottom: 200rpx;
+}
+.order-list .order-name.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  margin-right: 20rpx;
+}
+.order-list .order-name view.data-v-127632e4:nth-child(1) {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.order-list .order-name view.data-v-127632e4:nth-child(2) {
+  font-size: 0.875rem;
+  color: #d81e06;
+}
+.order-list .operation.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.order-list .operation view.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+/* 购物车 */
+.cart-box.data-v-127632e4 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.cart.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 36rpx;
+  padding-bottom: 36rpx;
+  padding-left: 28rpx;
+  background: #f1f1f1;
+  border-top: 1rpx #e3e3e3 solid;
+}
+.cart view.data-v-127632e4:nth-child(1) {
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 10rpx;
+  position: absolute;
+  bottom: 28rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.cart view.data-v-127632e4:nth-child(2) {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+          flex-grow: 2;
+  padding-left: 20%;
+}
+.cart view:nth-child(3) text.data-v-127632e4 {
+  margin-right: 28rpx;
+  border-radius: 36rpx;
+  background-color: #d81e06;
+  color: #ffffff;
+  padding: 18rpx 68rpx;
+}
+.cart .cart-img text.data-v-127632e4 {
+  width: 36rpx;
+  height: 36rpx;
+  background-color: #d81e06;
+  color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 20rpx;
+  top: 0;
+  right: -16rpx;
+}
+.card-details.data-v-127632e4 {
+  width: 100%;
+  background: #f1f1f1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  padding: 30rpx;
+  padding: 30rpx;
+}
+.card-details > view.data-v-127632e4:nth-child(1) {
+  font-size: 0.75rem;
+  width: 300rpx;
+}
+.card-details > view.data-v-127632e4:nth-child(2) {
+  color: #d81e06;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+.operation.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.operation view.data-v-127632e4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+

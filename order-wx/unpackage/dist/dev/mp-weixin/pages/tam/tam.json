@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单",
+  "usingComponents": {
+    "u-divider": "/node-modules/uview-ui/components/u-divider/u-divider",
+    "tam-card": "/components/tamcard/index"
+  }
+}

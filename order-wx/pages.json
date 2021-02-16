@@ -1,0 +1,88 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "某餐厅点餐系统"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "点餐"
+			}
+		},
+		{
+			"path": "pages/settlement/settlement",
+			"style": {
+				"navigationBarTitleText": "结算"
+			}
+		},
+		{
+			"path": "pages/tam/tam",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		{
+			"path": "pages/tamDetails/tamDetails",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/personalInfo/personalInfo",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/notFound/notFound"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#d81e06",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#d81e06",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home_active.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"iconPath": "static/icon/order.png",
+				"selectedIconPath": "static/icon/order_active.png",
+				"text": "点餐"
+			},
+			{
+				"pagePath": "pages/tam/tam",
+				"iconPath": "static/icon/tam.png",
+				"selectedIconPath": "static/icon/tam_active.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/personal/personal",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/my_active.png",
+				"text": "我的"
+			}
+		]
+	}
+}
