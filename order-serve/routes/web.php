@@ -14,8 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// 视图路由器
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+//Route::get('/', function () {
+//    return view('home');
+//});
+
+Route::get('/',[FoodsController::class, 'home'])->name('home.home');
+
+Route::get('/login', function () {
+    return view('login.index');
+});
+
+Route::get('/allFoods',[FoodsController::class, 'allFoods'])->name('allFoods.allFoods');
+Route::get('/addFoods',[FoodsController::class, 'addFoods'])->name('addFoods.addFoods');
+
+Route::get('/tam', function () {
+    return view('tam.index');
 });
 
 /*
@@ -24,7 +42,7 @@ Route::get('/', function () {
  * name给路由器起名
  */
 
-// 创建路由组
+// 创建路由组(api)
 Route::prefix('api')->group(function (){
     Route::get('/foods',[FoodsController::class, 'index'])->name('foods.index');
 });
