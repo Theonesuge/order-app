@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FoodsController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,22 +20,16 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-//Route::get('/', function () {
-//    return view('home');
-//});
+// 登录
+Route::get('/login',[UsersController::class, 'index'])->name('login.index');
+Route::post('/userLogin',[UsersController::class, 'login'])->name('userLogin.login');
+Route::get('/logout',[UsersController::class, 'logout'])->name('logout.logout');
 
+// 食品
 Route::get('/',[FoodsController::class, 'home'])->name('home.home');
-
-Route::get('/login', function () {
-    return view('login.index');
-});
-
 Route::get('/allFoods',[FoodsController::class, 'allFoods'])->name('allFoods.allFoods');
 Route::get('/addFoods',[FoodsController::class, 'addFoods'])->name('addFoods.addFoods');
-
-Route::get('/tam', function () {
-    return view('tam.index');
-});
+Route::get('/tam',[FoodsController::class, 'tam'])->name('tam.tam');
 
 /*
  * php artisan make:controller FoodsController

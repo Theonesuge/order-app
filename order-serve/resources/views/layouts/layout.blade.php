@@ -18,20 +18,30 @@
             <img style="margin-top: -5px" src="/images/logo.png" width="35px" height="35px" alt="logo">
             <span>某餐厅点餐管理系统</span>
         </div>
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item layadmin-flexible" lay-unselect="">
+                <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
+                    <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+                </a>
+            </li>
+        </ul>
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item" lay-unselect="">
                 <a lay-href="app/message/index.html" layadmin-event="message" lay-text="消息中心">
                     <i class="layui-icon layui-icon-notice"></i>
-
                     <!-- 如果有新消息，则显示小圆点 -->
                     <span class="layui-badge-dot"></span>
                 </a>
             </li>
             <li class="layui-nav-item">
-                <a href="javascript:;">管理员</a>
+                <a href="javascript:;">
+                    @if(session('username'))
+                        你好，管理员
+                    @endif
+                </a>
                 <dl class="layui-nav-child">
                     <dd><a href="">基本资料</a></dd>
-                    <dd><a href="">退出登录</a></dd>
+                    <dd><a href="{{route('logout.logout')}}">退出登录</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item layui-hide-xs" lay-unselect="">
@@ -51,7 +61,7 @@
                     <a class="" href="javascript:;"><i class="layui-icon layui-icon-app" style="font-size: 15px; color: #1E9FFF;margin-right: 5px"></i>管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="{{route('allFoods.allFoods')}}">食品管理</a></dd>
-                        <dd><a href="javascript:;">订单管理</a></dd>
+                        <dd><a href="{{route('tam.tam')}}">订单管理</a></dd>
                         <dd><a href="javascript:;">账号管理</a></dd>
                     </dl>
                 </li>
@@ -80,7 +90,7 @@ layui.use('element', function(){
     let element = layui.element;
 });
 // 使用表格
-layui.use('table', function(){
+layui.use(['table','layer'], function(){
     let table = layui.table;
     //监听工具条
     table.on('tool(foods)', function(obj){

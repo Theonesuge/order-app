@@ -3,10 +3,10 @@
 @section('content')
     <div style="padding: 28px;background-color: #FFFFFF;margin-left: 40px;margin-top: 20px;width: 1200px">
         {{-- 搜索 --}}
-        <div class="layui-inline" style="margin-bottom: 15px">
+        <div class="layui-inline" style="margin-bottom: 15px;width: 280px">
             <input class="layui-input" name="id" id="demoReload" autocomplete="off" placeholder="请输入食品名称...">
         </div>
-        <button style="margin-bottom: 15px" class="layui-btn layui-btn-normal" data-type="reload"><i class="layui-icon layui-icon-search"></i>搜索</button>
+        <button style="margin-bottom: 15px;margin-left: 8px" class="layui-btn layui-btn-normal" data-type="reload"><i class="layui-icon layui-icon-search"></i>搜索</button>
         {{-- 表格 --}}
         <table class="layui-table" lay-data="{width: 1200, height:405, url:'/json/foods.json', page:true, id:'idTest'}" lay-filter="foods">
             <thead>

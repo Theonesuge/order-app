@@ -22,37 +22,38 @@
 </head>
 <body>
 
-<div class="login layui-anim layui-anim-up">
+<div class="login">
     <h1 style="font-size: 21px;color: #333333;text-align: center">某餐厅点餐系统</h1>
     <p style="font-size: 15px;color: #999999;text-align: center;margin: 15px 0 28px 0">基于点餐小程序的后台管理系统</p>
-    <form class="layui-form" action="">
+    <form class="layui-form" action="/userLogin" method="POST">
+        @csrf
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <label class="login-icon layui-icon layui-icon-username"></label>
-                <input type="text" name="username" lay-verify="username" lay-reqtext="请输入用户名" autocomplete="off" placeholder="用户名" class="layui-input">
+                <input type="text" name="username" lay-verify="username" autocomplete="off" placeholder="用户名" class="layui-input input-username">
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <label class="login-icon layui-icon layui-icon-password"></label>
-                <input type="text" name="password" lay-verify="password" lay-reqtext="请输入密码" placeholder="密码" autocomplete="off" class="layui-input">
+                <input type="password" name="password" lay-verify="password" placeholder="密码" value="{{session('password')}}" autocomplete="off" class="layui-input input-pwd">
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <label class="login-icon layui-icon layui-icon-vercode"></label>
-                <input style="width: 210px;float: left" type="text" name="vercode" lay-verify="vercode" lay-reqtext="验证码不能为空" placeholder="图形验证码" autocomplete="off" class="layui-input input-val">
+                <input style="width: 210px;float: left" type="text" name="vercode" lay-verify="vercode" placeholder="图形验证码" autocomplete="off" class="layui-input input-vercode">
                 <canvas style="float: right;background: #ffffff;" id="canvas" width="108" height="38"></canvas>
-            </div>
-        </div>
-        <div class="layui-form-item" pane="">
-            <div class="layui-input-block">
-                <input type="checkbox" name="like1[write]" lay-skin="primary" title="记住密码" checked="">
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button type="submit" class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="demo1">登入</button>
+                <input type="checkbox" name="remember" lay-skin="primary" title="记住密码">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn layui-btn-fluid" lay-submit="" >登入</button>
             </div>
         </div>
     </form>
@@ -63,70 +64,8 @@
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{asset('layui/layui.js')}}"></script>
 <script>
-    layui.use(['form'], function(){
-        var form = layui.form
-            ,layer = layui.layer
 
-        //自定义验证规则
-        form.verify({
-            username: function(value){
-                if(value.length < 2){
-                    return '用户名至少得2个字符';
-                }
-            }
-            ,password: [
-                /^[\S]{6,12}$/
-                ,'密码必须6到12位，且不能出现空格'
-            ]
-            ,vercode: function(value){
-                if(value.length < 5){
-                    return '验证码应为4个字符';
-                }
-            }
-        });
-
-
-        //监听提交
-        form.on('submit(demo1)', function(data){
-            var field = data.field;
-            var val = $(".input-val").val().toLowerCase();
-            var num = show_num.join("");
-            if(val === ''){
-                layer.msg('请输入验证码');
-            }else if (val === num){
-
-            }else {
-                layer.msg('验证码有误，请重新输入');
-            }
-
-            // layer.alert(JSON.stringify(data.field), {
-            //     title: '最终的提交信息'
-            // })
-            return false;
-        });
-
-        //表单赋值
-        layui.$('#LAY-component-form-setval').on('click', function(){
-            form.val('example', {
-                "username": "贤心" // "name": "value"
-                ,"password": "123456"
-                ,"interest": 1
-                ,"like[write]": true //复选框选中状态
-                ,"close": true //开关状态
-                ,"sex": "女"
-                ,"desc": "我爱 layui"
-            });
-        });
-
-        //表单取值
-        layui.$('#LAY-component-form-getval').on('click', function(){
-            var data = form.val('example');
-            alert(JSON.stringify(data));
-        });
-
-    });
-
-    var show_num = [];
+    let show_num = [];
     $(function () {
         draw(show_num);
         $("#canvas").on('click',function (){
@@ -187,6 +126,61 @@
         var b = Math.floor(Math.random() * 256);
         return "rgb(" + r + "," + g + "," + b + ")";
     }
+
+    layui.use(['form','layer'], function(){
+
+        let form = layui.form
+        //自定义验证规则
+        form.verify({
+            username: function(value){
+                if(value === ''){
+                    return '请输入用户名';
+                }else if (value.length < 2){
+                    return '用户名至少得2个字符';
+                }
+            },
+            password:[
+                    /^[\S]{6,12}$/
+                    ,'密码不能为空，密码必须6到12位，且不能出现空格'
+                ],
+            vercode: function(value){
+                let num = show_num.join("");
+                if(value === ''){
+                    return '验证码不能为空';
+                }else if(value.length !== 4){
+                    return '验证码应为4个字符';
+                }else if(value.toLowerCase() !== num){
+                    return '验证码有误，请重新输入';
+                }
+            }
+        });
+
+        // 登录错误提示
+        if("{{session('error')}}"){
+            layer.msg("{{session('error')}}")
+        }
+
+        // 登录成功提示
+        if("{{session('success')}}"){
+            layer.msg("{{session('success')}}")
+            setTimeout(()=>{
+                window.location.href="/";
+            },3000)
+        }
+
+        // 退出成功提示
+        if("{{session('out')}}"){
+            layer.msg("{{session('out')}}")
+        }
+
+        // 监听提交
+        // form.on('submit(login)', function(data){
+        //     layer.alert(JSON.stringify(data.field), {
+        //         title: '最终的提交信息'
+        //     })
+        //     return false;
+        // });
+    });
 </script>
 
 </body>

@@ -13,9 +13,13 @@ class FoodsController extends Controller
     //食品控制器
 
     /* 首页 */
-    public function home()
+    public function home(Request $request)
     {
-        return view('home');
+        if($request->session()->has('username')){
+            return view('home');
+        }else {
+            return redirect('/login');
+        }
     }
 
     /* 展示所有食品 */
@@ -29,6 +33,12 @@ class FoodsController extends Controller
     public function addFoods()
     {
         return view('foods.add');
+    }
+
+    /* 食品订单 */
+    public function tam()
+    {
+        return view('tam.index');
     }
 
     // 食品api接口
